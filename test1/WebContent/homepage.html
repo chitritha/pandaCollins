@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="homepage.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<center><h1>PANDA COLLINS</h1>
+	<form>
+		<input type="text_s" name="search" placeholder="Search..">
+	</form></center>                  
+	<ul class="nav nav-tabs " role="tablist">
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="#">MEN</a></li>
+		<li><a href="#">WOMEN</a></li>
+		<li><a href="#">KIDS</a></li>
+		<li style="float:right"><a href="#">Help</a></li>
+		<li onclick="document.getElementById('id01').style.display='block'" style="float:right"><a href="#">Login</a></li>
+		<li onclick="document.getElementById('id02').style.display='block'" style="float:right"><a href="#">Sign Up</a></li>
+	</ul>
+</div>
+
+<!--button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button" align="right">Login</button-->
+
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="WelcomeServlet" method="get"> 
+    <!--div class="imgcontainer"-->
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!--img src="images/Avatar.jpeg" alt="Avatar" class="avatar" height="70"-->
+    <!--/div-->
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="userName" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit" class="button">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+      <br><br><br>
+	 <div class="clearfix">
+		<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+		<span class="psw">Forgot <a href="#">password?</a></span>
+	 </div>
+	</div>
+  </form>
+</div>
+
+
+
+<!--button onclick="document.getElementById('id02').style.display='block'" style="width:auto"; class="button" align="right">Sign Up</button-->
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+  <form class="modal-content animate" action="DataController" method="post">
+    <div class="container">
+	 <label><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="userName" required>
+      
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+      
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+	 
+	 <label><b>Phone</b></label>
+      <input type="text" placeholder="Enter phone number" name="phone" required>
+	 
+
+      <!--input type="checkbox" checked="checked"//remember me--> 
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+<br><br>
+
+<marquee direction="left">
+<img src="C:\Users\welcome\Downloads\food.jpg" alt="" style = "height : 200px; width : 200px;"/>
+<img src="C:\Users\welcome\Downloads\food2.jpg" alt="" style = "height : 200px; width : 200px;" />
+<img src="C:\Users\welcome\Downloads\food3.jpg" alt="" style = "height : 200px; width : 200px;" />
+<img src="C:\Users\welcome\Downloads\food4.jpg" alt="" style = "height : 200px; width : 200px;"/>
+<img src="C:\Users\welcome\Downloads\food5.jpg" alt="" style = "height : 200px; width : 200px;" />
+<img src="C:\Users\welcome\Downloads\food.jpg" alt="" style = "height : 200px; width : 200px;" />
+</marquee>
+ 
+</body>
+</html>
