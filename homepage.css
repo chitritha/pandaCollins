@@ -1,20 +1,68 @@
 .button {
-    background-color: #33adff;
+    background-color:rgb(204,0,102);
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
+header{
+	height:25%;
+	background-image: url('Macintosh HD/Users/nanlluruchitritha/Desktop/logo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: 210px 18px;
+	background-size:8%;
+	background-color:rgb(51,0,25);
+}
+h1{
+	color:white;
+}
+#body {
+	height:78%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid black;
+}
+#wrap	{
+	width: 100%; /* Spans the width of the page */
+	height: 50px; 
+	margin: 0; /* Ensures there is no space between sides of the screen and the menu */
+	z-index: 99; /* Makes sure that your menu remains on top of other page elements */
+	position: relative; 
+	background-color: #366b82;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
 .multipleElements{
 	margin-left:10px;
 	text-align: left;
 }
 body {
-    background-image: url('images/background.jpg');
+    /*background-image: url('images/background.jpg');*/
     background-repeat: no-repeat;
-	background-size: 100%
+	background-size: 100% 100%;
+	/*background-color:rgb(255,153,255);*/
 }
+.navbar-custom {
+    background-color: rgb(153,0,153);
+}
+.nav-tabs > li.active > a {
+  color: #cce6ff;
+}
+.nav-tabs > li > a {
+  color:#ffffff;
+  font-size: 18px;
+}
+
 /*for search box*/ 
 input[type=text_s] {
     width: 350px;
@@ -25,13 +73,13 @@ input[type=text_s] {
     background-color: white;
     background-image: url('images/searchicon.png');
     background-size:18px;
-    background-position: 10px 10px; 
+    background-position: 10px 13px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px; 
 }
 
 /* Full-width input fields */
-input[type=text], input[type=password], input[type=email] ,input[type=date]{
+input[type=text], input[type=password], input[type=email] ,input[type=date], input[type=url], input[type=number]{
     width: 100%;
 	padding: 12px 20px;
     margin: 8px 0;
@@ -44,7 +92,7 @@ input[type=text], input[type=password], input[type=email] ,input[type=date]{
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336;
+    background-color: white;
 }
 
 .signupbtn {
@@ -81,7 +129,7 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: green;
+    background-color: rgb(192,192,192);
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -141,7 +189,7 @@ div.gallery {
     margin: 15px;
     border: 2px solid #ccc;
     float: right;
-    width: 200px;
+    width: 240px;
 }
 
 div.gallery:hover {
@@ -156,16 +204,15 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+	color: #ffffff;
 }
 /*men.html side nav bar*/
 .navbar-fixed-left {
-  width: 140px;
+  width: 200px;
   position: fixed;
   border-radius: 0;
-  height: 100%;
-  
+  height: 60%;
 }
-
 .navbar-fixed-left .navbar-nav > li {
   float: none;  /* Cancel default li float: left */
   width: 139px;
@@ -180,6 +227,42 @@ div.desc {
   margin-top: -50px;
   margin-left: 140px;
 }
+
+img.resize {
+  width:200px;
+  height:200px;
+}
+.carousel {
+	height: 300px;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	width: 40%;
+	margin: auto;
+}
+a {
+color: white;
+}
+a:link {
+color: white;
+}
+a:visited {
+color: white;
+}
+a:hover {
+color: white;
+}
+div#my_container a {
+color: white;
+}
+p.my_class a {
+color: white;
+}
+ul.my_list a {
+color: white;
+}
+
 /*shop.html page css code*/
 /* .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;} */
+-
