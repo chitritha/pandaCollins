@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Seller Home</title>
+<link rel="stylesheet" type="text/css" href="commonCss.css">
+<script src="homepage.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head>
+
+<body>
+
+<header>
+<br>
+<br>
+	<center><h1 style="color:white">PANDA COLLINS</h1></center> 
+<br>	
+<br>                  
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <ul class="nav nav-tabs navbar-custom" role="tablist">
+      <li><a href="sellerHome.html#orders">ORDERS</a></li>
+      <li><a href="sellerHome.html#addProduct">ADD PRODUCT</a></li>
+      <li class="dropdown" style="float:right"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MY PROFILE<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">View My Profile</a></li>
+          <li><a href="homepage.html">Log Out</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+</header>
+
+<div class="container" id="orders"><center>
+<table>
+  <tr>
+  	<th>S.No</th>
+    <th>Product To Be Shipped</th>
+    <th>Color</th>
+    <th>Size</th>
+    <th>No of units to be Shipped</th>
+    <th>Quantitative Price</th>
+    <th>Deliver Before</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</center>
+</div>
+
+<div class="container" id="addProduct">
+<form action="demo_form.asp">
+<label class="multipleElements">Product Name: </label><input type="text" placeholder="name" name="product name" required><br>
+<label>Product Category:</label>
+<ul><input type ="radio" name="Product Category" value ="men">Men</ul>
+<ul><input type ="radio" name="Product Category" value ="Women">Women<br></ul>
+<label>Product Type</label>
+<ul><input type ="radio" name="Product Type" value ="formal shoes">Formal Shoes</ul>
+				<ul><input type ="radio" name="Product Type" value ="Sports shoes">Sports Shoes</ul>
+				<ul><input type ="radio" name="Product Type" value ="slip on">Slip On</ul>
+				<ul><input type ="radio" name="Product Type" value ="Sandals">Sandals</ul>
+<label>Brand</label>
+<ul><input type ="radio" name="Brand" value ="Nike">Nike</ul>
+				<ul><input type ="radio" name="Brand" value ="Puma">Puma</ul>
+				<ul><input type ="radio" name="Brand" value ="Reebook">Reebook</ul>
+				<ul><input type ="radio" name="Brand" value ="Adidas">Adidas</ul>
+				<ul><input type ="radio" name="Brand" value ="Others">Others</ul>
+<br>
+<label>Color</label>
+<ul><input type ="radio" name="Color" value ="Black">Black</ul>
+				<ul><input type ="radio" name="Color" value ="yellow">Yellow</ul>
+				<ul><input type ="radio" name="Color" value ="blue">Blue</ul>
+				<ul><input type ="radio" name="Color" value ="white">White</ul>
+<label>Product Sizes</label>
+<ul><input type ="radio" name="Product Sizes" value ="3.5">3.5</ul>
+				<ul><input type ="radio" name="Product Sizes" value ="4">4</ul>
+				<ul><input type ="radio" name="Product Sizes" value ="4.5">4.5</ul>
+				<ul><input type ="radio" name="Product Sizes" value ="5">5</ul>
+				<ul><input type ="radio" name="Product Sizes" value ="5.5">5.5</ul>
+				<ul><input type ="radio" name="Product Sizes" value ="6">6</ul>
+				<ul><input type ="radio" name="Product Sizes" value ="6.5">6.5</ul>
+				<ul><input type ="radio" name="Product Sizes" value ="7">7</ul>
+				<ul><input type ="radio" name="Product Sizes" value ="7.5">7.5</ul>
+				<ul><input type ="radio" name="Product Sizes" value ="8">8</ul>
+				<ul><input type ="radio" name="Product Sizes" value ="8.5">8.5</ul>
+				<ul><input type ="radio" name="Product Sizes" value ="9">9</ul>
+
+<label class="multipleElements">Upload picture url: </label><input type="url" placeholder="picture url" name="Picture " required><br>			
+<label class="multipleElements">Stock Available: </label><input type="number" placeholder="Stock" name="Stock" required><br>
+<label class="multipleElements">Cost: </label><input type="text" placeholder="cost" name="cost" required><br>			
+</form>
+</div>
+
+<div class="container">
+<button class="button"><a href="addColorOrSize.html">Add Color or Size</a></button>
+<button class="button"><a href="sellerHome.html">Finish</a></button>
+</div>
+</body>
+</html>
